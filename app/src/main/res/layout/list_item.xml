@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/course_image"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:background="@drawable/image_border"
+          />
+
+
+        <TextView
+            android:id="@+id/course_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip"
+            android:textStyle="bold"
+            android:padding="7dip"
+            android:textSize="16sp"
+            android:layout_marginLeft="12dip"
+            android:layout_marginTop="12dip"
+            android:background="#37abf2"
+            android:textColor="#ffffffff"
+            android:text="Golden Gate" />
+
+        <ImageView
+            android:id="@+id/author_pic"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:padding="7dip"
+            android:src="@android:drawable/ic_menu_search"/>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/course_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Course 1"
+        android:textSize="21sp"
+        android:textColor="#666" />
+
+    <TextView
+        android:id="@+id/author_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:layout_marginTop="10dp"
+        android:textSize="19sp"
+
+        android:layout_marginBottom="15dp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f1f1f1"
+        />
+
+    <RatingBar
+        android:id="@+id/simpleRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:numStars="5"
+        android:scaleX=".6"
+        android:scaleY=".6"
+        android:theme="@style/RatingBar"
+        android:transformPivotX="0dp"
+        android:transformPivotY="0dp" /><!-- number of stars to be displayed-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="20dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/member"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="2568"
+                android:paddingLeft="5dp"
+                android:textAlignment="center"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="9dp"
+                android:src="@drawable/comment"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="25"
+                android:paddingLeft="5dp"
+                android:textAlignment="center"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tutionfee"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:text="Free"
+            android:textAlignment="textEnd"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>
